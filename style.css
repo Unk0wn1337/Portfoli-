@@ -1,6 +1,9 @@
 main {
+    margin-top: 0.5cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 3fr 2fr;
     grid-template-areas: "h h h" 
                          "n n n"  
                          "a a a"
@@ -12,11 +15,12 @@ main {
 header {
     grid-area: h;
     text-align: center;
+    border: solid 1px black;
 }
 
 nav {
     grid-area: n;
-
+    text-align: center;
 
 }
 article {
@@ -26,5 +30,14 @@ article {
 
 footer{
     grid-area: f;
+
+}
+
+.fejlecAlex {
+   border: solid 1px black;
+    
+}
+.fejlecKende {
+    border: solid 1px black;     
 
 }
