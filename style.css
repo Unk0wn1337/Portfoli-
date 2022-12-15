@@ -1,3 +1,8 @@
+body {
+background-image: url(képek/madam.jpg); 
+
+}
+
 main {
     margin-top: 0.5cm;
     margin-left: 2cm;
@@ -9,7 +14,7 @@ main {
                          "a a a"
                          "f f f";
     border:  solid 1px black;                        
-
+    color:white
 }
 
 header {
