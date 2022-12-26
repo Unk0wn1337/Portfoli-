@@ -11,13 +11,26 @@
     <main>
       <header>
         <div id="alKe">
-            
           <h1 class="keniColor">Simon Kende</h1>
-        
-          <h1 class="alexColor">Fári Alex</h1>
+          <div id="text">
+            <script type="application/javascript">
+              var i = 0,
+                text;
+              text = "Portfolio";
+
+              function typing() {
+                if (i < text.length) {
+                  document.getElementById("text").innerHTML += text.charAt(i);
+                  i++;
+                  setTimeout(typing, 75);
+                }
+              }
+              typing();
+            </script>
+          </div>
         </div>
-        
-    </header>
+        <h1 class="alexColor">Fári Alex</h1>
+      </header>
       <nav>
         <div id="progamLec">
           <div class="javaBlokk">
@@ -33,9 +46,6 @@
       </nav>
       <article>
         <h3>Jelzés</h3>
-
-
-        
       </article>
       <footer>
         <p>a</p>

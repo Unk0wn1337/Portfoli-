@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'portfolioWordType';
+    src: url(fontok/infinit.ttf);
+}
+
+@font-face {
+    font-family: 'konzolosWordType';
+    src: url(fontok/konzolok.ttf);
+}
+
+
+@font-face {
+    font-family: 'alexOs';
+    src: url(fontok/feketegolyó.ttf);
+}
+
+
+@font-face {
+    font-family: 'graffiti';
+    src: url(fontok/DonGraffiti.otf);
+}
+
 body {
 background-image: url(képek/hatter.png);
 }
@@ -5,9 +27,11 @@ background-image: url(képek/hatter.png);
 main {
     opacity: 100%;
     background-color: #18191a;
-    margin-top: 0.5cm;
-    margin-left: 2cm;
-    margin-right: 2cm;
+    /* padding-top: 1cm; */
+    
+    margin-top: 1cm;
+    margin-left: 4cm;
+    margin-right: 4cm;
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-areas: "h h h" 
@@ -32,28 +56,41 @@ nav {
 }
 article {
     grid-area: a;
-    opacity: 80%;
+    
 }
 
 footer{
     grid-area: f;
-    opacity: 80%;
+    
     
 }
-  
+
+
+
 #alKe {
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     border: solid 1px black;     
     
 
 }
 
+#text {
+    
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 0.75cm;
+    color: white;
+    border: solid 1px white;
+    font-family:'portfolioWordType';
+}
+
+
 
 
 #progamLec {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 3fr 2fr;
       list-style-type:none;
       margin: 0;
       padding: 0;
@@ -77,7 +114,7 @@ footer{
 
 }
 .alexColor {
-    
+    font-family: 'alexOs';
     background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
     background-size: 40%;
     -webkit-text-fill-color: transparent;    
@@ -103,7 +140,7 @@ footer{
 
 
 .keniColor {
-    
+    font-family: 'graffiti';
     background: linear-gradient(90deg, #8A2E60, #AA7C39, #343477, #8A2E60, #BFAF00, #8BB600);
     /* background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000 ); */
     background-size: 40%;
@@ -125,3 +162,28 @@ footer{
     }
 
 }
+
+
+.kozepsoFocim {
+    -webkit-text-stroke: 0.3vw #AA3939;
+    text-transform: uppercase;
+
+} 
+.kozepsoFocim::before {
+    content: attr(data-text);
+    color: #AA9B39;
+    -webkit-text-stroke: 0vw #313A75;
+    overflow: hidden;
+    animation: beCsuszas 6s linear infinite;
+
+}
+@keyframes beCsuszas {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+ }
