@@ -1,9 +1,10 @@
 body {
-background-image: url(képek/madam.jpg); 
-
+background-image: url(képek/hatter.png);
 }
 
 main {
+    opacity: 100%;
+    background-color: #18191a;
     margin-top: 0.5cm;
     margin-left: 2cm;
     margin-right: 2cm;
@@ -18,9 +19,10 @@ main {
 }
 
 header {
+    background-image: url(képek/istock-1204293505.jpg);
     grid-area: h;
     text-align: center;
-    border: solid 1px black;
+    border: solid 3px white;
 }
 
 nav {
@@ -30,19 +32,96 @@ nav {
 }
 article {
     grid-area: a;
-
+    opacity: 80%;
 }
 
 footer{
     grid-area: f;
-
-}
-
-.fejlecAlex {
-   border: solid 1px black;
+    opacity: 80%;
     
 }
-.fejlecKende {
+  
+#alKe {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
     border: solid 1px black;     
+    
+
+}
+
+
+
+#progamLec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+      list-style-type:none;
+      margin: 0;
+      padding: 0;
+      /* overflow: hidden; */
+      background-color: #333;
+
+
+}
+.javaBlokk {
+    border: solid white;
+    
+}
+.htmlBlokk {
+    border: solid white;
+    
+    
+}
+.pythonBlokk {
+    border: solid white;
+    
+
+}
+.alexColor {
+    
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 40%;
+    -webkit-text-fill-color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animacio 10s linear infinite;
+
+}
+@keyframes animacio{
+    0%{
+        background-position: 0%;
+
+    }
+    100%{
+
+        background-position: 200%;
+    }
+
+}
+
+
+
+
+
+.keniColor {
+    
+    background: linear-gradient(90deg, #8A2E60, #AA7C39, #343477, #8A2E60, #BFAF00, #8BB600);
+    /* background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000 ); */
+    background-size: 40%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+
+
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+
+    }
 
 }
