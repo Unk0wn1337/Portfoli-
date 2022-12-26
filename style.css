@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'portfolioWordType';
-    src: url(fontok/infinit.ttf);
+    src: url(fontok/ka1.ttf);
 }
 
 @font-face {
@@ -77,12 +77,29 @@ footer{
 
 #text {
     
+    height: 1cm;
+    background: linear-gradient(90deg, #FFE4E4, #B89999, #9C0000, #4E0000, #9C0000, #B89999);
+    background-size: 40%;
+    font-family:'portfolioWordType';
     text-align: center;
     text-transform: uppercase;
     padding-top: 0.75cm;
     color: white;
-    border: solid 1px white;
-    font-family:'portfolioWordType';
+    -webkit-text-fill-color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: kozepsoSzovegAtetszese 10s linear infinite;
+}
+@keyframes  kozepsoSzovegAtetszese{
+    0%{
+        background-position: 0%;
+
+    }
+    100%{
+
+        background-position: 100%;
+    }
+
 }
 
 
@@ -116,12 +133,12 @@ footer{
 .alexColor {
     font-family: 'alexOs';
     background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
-    background-size: 40%;
+    background-size: 60%;
     -webkit-text-fill-color: transparent;    
     -webkit-background-clip: text;
     background-clip: text;
     animation: animacio 10s linear infinite;
-
+    /* border-left: solid 3px white; */
 }
 @keyframes animacio{
     0%{
@@ -155,10 +172,11 @@ footer{
 @keyframes animate {
     0%{
         background-position: 0%;
+
     }
     100%{
-        background-position: 200%;
 
+        background-position: 200%;
     }
 
 }
@@ -187,3 +205,4 @@ footer{
         width: 100%;
     }
  }
+
