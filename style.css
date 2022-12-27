@@ -291,3 +291,39 @@ footer{
     border: solid white 3px;
 
 }
+
+/* .rainbowBorder {
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 5px;
+    -webkit-animation: animaltBorder 3s ease alternate infinite;
+    animation: animaltBorder 3s ease alternate infinite;
+    z-index: -1
+}
+
+@-webkit-keyframes animaltBorder {
+0% {
+        background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+
+}
+100% {
+    background-position: 0% 50%;
+    }
+}
+
+@keyframes animaltBorder {
+    0% {
+        background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+
+}
+100% {
+    background-position: 0% 50%;
+    }
+} */
+
+
