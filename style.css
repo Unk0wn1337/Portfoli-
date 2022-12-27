@@ -78,7 +78,7 @@ footer{
 #text {
     
     height: 1cm;
-    background: linear-gradient(90deg, #FFE4E4, #B89999, #9C0000, #4E0000, #9C0000, #B89999);
+    background: linear-gradient(45deg, #FFE4E4, #B89999, #9C0000, #4E0000, #9C0000, #B89999, #FFE4E4);
     background-size: 40%;
     font-family:'portfolioWordType';
     text-align: center;

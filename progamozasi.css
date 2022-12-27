@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main{
+    scroll-snap-type: y mandatory;
+    overflow-y:scroll;
+    height: 100vh;
+}
+
+section{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+.one {
+    background-image: url(képek/javaWalpaper.jpg);
+}
+.two {
+
+    background-color: brown;
+
+}
+
+.three {
+    background-color: white;
+
+
+}
+
+.four {
+    background-color: aqua;
+
+}
+
+.javaFadeIn{
+    animation: fadeIn 6s;
+    padding-bottom: 2.5cm;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+
+    }
+
+}
