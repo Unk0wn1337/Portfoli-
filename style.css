@@ -1,4 +1,18 @@
 @font-face {
+    font-family: 'kendeNeveBetu';
+    src: url(fontok/Slaytanic.ttf);
+}
+
+@font-face {
+    font-family: 'alexNeveBetu';
+    src: url(fontok/Dark\ Magic.ttf);
+}
+@font-face {
+    font-family: 'godofwar';
+    src: url(fontok/GODOFWAR.TTF);
+}
+
+@font-face {
     font-family: 'portfolioWordType';
     src: url(fontok/ka1.ttf);
 }
@@ -52,11 +66,11 @@ header {
 nav {
     grid-area: n;
     text-align: center;
-
+    
 }
 article {
     grid-area: a;
-    
+    grid-template-columns: 1fr 3fr 2fr;
 }
 
 footer{
@@ -72,7 +86,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     border: solid 1px black;     
     
-
+    
 }
 
 #text {
@@ -93,13 +107,13 @@ footer{
 @keyframes  kozepsoSzovegAtetszese{
     0%{
         background-position: 0%;
-
+        
     }
     100%{
-
+        
         background-position: 100%;
     }
-
+    
 }
 
 
@@ -108,13 +122,13 @@ footer{
 #progamLec {
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
-      list-style-type:none;
-      margin: 0;
-      padding: 0;
-      /* overflow: hidden; */
-      background-color: #333;
-
-
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    background-color: #333;
+    
+    
 }
 .javaBlokk {
     border: solid white;
@@ -128,7 +142,7 @@ footer{
 .pythonBlokk {
     border: solid white;
     
-
+    
 }
 .alexColor {
     font-family: 'alexOs';
@@ -143,13 +157,13 @@ footer{
 @keyframes animacio{
     0%{
         background-position: 0%;
-
+        
     }
     100%{
-
+        
         background-position: 200%;
     }
-
+    
 }
 
 
@@ -172,20 +186,20 @@ footer{
 @keyframes animate {
     0%{
         background-position: 0%;
-
+        
     }
     100%{
 
         background-position: 200%;
     }
-
+    
 }
 
 
 .kozepsoFocim {
     -webkit-text-stroke: 0.3vw #AA3939;
     text-transform: uppercase;
-
+    
 } 
 .kozepsoFocim::before {
     content: attr(data-text);
@@ -193,7 +207,7 @@ footer{
     -webkit-text-stroke: 0vw #313A75;
     overflow: hidden;
     animation: beCsuszas 6s linear infinite;
-
+    
 }
 @keyframes beCsuszas {
     0%,10%,100%
@@ -204,5 +218,72 @@ footer{
     {
         width: 100%;
     }
- }
+}
 
+.rolunkBorder{
+    border: solid 3px white;
+
+
+}
+
+
+.midH3 {
+    text-align: center;
+    font-family: 'godofwar';
+    
+}   
+
+
+.profilkepAlex {
+    border: 3px solid white;
+    grid-template-columns: 0fr 1fr 3fr;
+    display: grid;
+    /* padding: 1.5px; */
+    /* padding-right: 5cm; */
+}
+.neveA {
+    font-size: 1cm;
+    font-family: 'alexNeveBetu';
+    text-align: left;
+    padding-top: 1cm;
+    padding-left: 1cm;
+}
+.infiA {
+    text-align: center;
+    padding-right: 10cm;
+    padding-top: 1.5cm;
+}
+
+.profilkepKende {
+    border:  solid 3px white;
+    grid-template-columns: 0fr 1fr 3fr;
+    display: grid;
+
+}
+.neveK {
+    font-size: 1cm;
+    font-family: 'kendeNeveBetu';
+    text-align: left;
+    padding-top: 1cm;
+    padding-left: 1cm;
+
+}
+
+.infiK {
+    text-align: center;
+    padding-right: 10cm;
+    padding-top: 1.5cm;
+
+}
+
+.footerFocim {
+    font-family: 'godofwar';
+    text-align: center;
+
+
+}
+.elerhetoseg {
+    text-align: center;
+
+
+}
