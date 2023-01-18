@@ -42,11 +42,11 @@ main {
     
     opacity: 100%;
     background-color: #18191a;
-    /* padding-top: 1cm; */
-    width: 100%;
+   
+    
     margin-top: 1cm;
     margin-left: 4cm;
-    /* margin-right: 4cm; */
+    margin-right: 4cm;
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-areas: "h h h" 
@@ -69,6 +69,10 @@ nav {
     text-align: center;
     
 }
+nav img{
+    max-width: 200px;
+}
+
 article {
     grid-area: a;
     grid-template-columns: 1fr 3fr 2fr;
@@ -240,7 +244,7 @@ footer{
 
 .profilkepAlex {
     border: 3px solid white;
-    grid-template-columns: 0fr 1fr 3fr;
+    grid-template-columns: 0fr 1fr 100%;
     display: grid;
     /* padding: 1.5px; */
     /* padding-right: 5cm; */
@@ -260,7 +264,7 @@ footer{
 
 .profilkepKende {
     border:  solid 3px white;
-    grid-template-columns: 0fr 1fr 3fr;
+    grid-template-columns: 0fr 1fr 100%;
     display: grid;
 
 }
@@ -296,17 +300,25 @@ footer{
 
 }
 
-@media (max-width: 1300px) {
-    main {
-        grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 600px) {
+    main{
+      grid-template-areas:
+                'h'
+                'n'
+                'a'
+                'f'
+        }
+      article{
+      grid-template-columns: 1fr;
+      }
+     .nav{
+      grid-template-columns: 1fr;
+      }
+    .footer{
+      grid-template-columns: 1fr;
     }
-   
-}
+      
+  }
 
-@media (min-width: 1333px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-    
-}
+
 
